@@ -1,0 +1,77 @@
+{
+"recipes": [
+
+{id:"studyresearch.attemptsolve.challenge.knowledge",
+actionId:"study",
+label:"A Challenge: Knowledge",
+requirements:{challenge.knowledge:1},
+startdescription:"This is a puzzle with missing pieces. I might find those pieces in odd corners of scholarship. [Provide Erudition, or use a Library.]",
+slots:[{id:"solvechallenge",label:"Solution", required:{erudition:1,library:1},greedy:true}],
+warmup:30,
+craftable:false,
+linked:[{id:"studyresearch.failed.challenge.knowledge"},
+{id:"studyresearch.solved.challenge.knowledge"}]
+},
+
+{id:"studyresearch.attemptsolve.challenge.intuition",
+actionId:"study",
+label:"A Challenge: Intuition",
+requirements:{challenge.intuition:1},
+startdescription:"This is a puzzle with missing pieces. I might find those pieces in odd corners of scholarship. [Provide Glimmering, or use a Sanctuary.]",
+slots:[{id:"solvechallenge",label:"Solution", required:{glimmering:1,sanctuary:1},greedy:true}],
+warmup:30,
+craftable:false,
+linked:[{id:"studyresearch.failed.challenge.intuition"},
+{id:"studyresearch.solved.challenge.intuition"}]
+},
+
+{id:"studyresearch.attemptsolve.challenge.grim",
+actionId:"study",
+label:"A Challenge: Grim Lessons",
+requirements:{challenge.grim:1},
+startdescription:"This is a puzzle with missing pieces. I might find those pieces in odd corners of scholarship. [Provide Dread, use a Pit, or use the Silent Intensity skill. Dread may breed.]",
+slots:[{id:"solvechallenge",label:"Solution", required:{dread:1,pit:1,skillreasond_concentration:1},greedy:true}],
+warmup:30,
+craftable:false,
+linked:[{id:"studyresearch.failed.challenge.grim"},
+{id:"studyresearch.solved.challenge.grim"}]
+},
+
+{id:"studyresearch.attemptsolve.challenge.obsessive",
+actionId:"study",
+label:"A Challenge: Obsessive Research",
+requirements:{challenge.obsessive:1},
+startdescription:"This is a puzzle with missing pieces. I might find those pieces in odd corners of scholarship. [Surrender your Reason, which may occasionally be permanently damaged; or use a Library; or use Never-No skill.]",
+slots:[{id:"solvechallenge",label:"Solution",required:{reason:1,library:1,skillpassiond_unreason:1},greedy:true}],
+warmup:30,
+craftable:false,
+linked:[{id:"studyresearch.failed.challenge.obsessive"},
+{id:"studyresearch.solved.challenge.obsessive"}]
+},
+
+{id:"studyresearch.attemptsolve.challenge.paradox",
+actionId:"study",
+label:"A Challenge: Paradoxical Resolution",
+requirements:{challenge.paradox:1},
+startdescription:"This is a puzzle with missing pieces. I might find those pieces in odd corners of scholarship. [Surrender Passion, which might occasionally be damaged; use a Sanctuary; or use an Open Soul skill.]",
+slots:[{id:"solvechallenge",label:"Solution", required:{passion:1,sanctuary:1,skillpassiond_folly:1},greedy:true}],
+warmup:30,
+craftable:false,
+linked:[{id:"studyresearch.failed.challenge.paradox"},
+{id:"studyresearch.solved.challenge.paradox"}]
+},
+
+{id:"studyresearch.attemptsolve.challenge.illumination",
+actionId:"study",
+label:"A Challenge: Illumination",
+requirements:{challenge.illumination:1},
+startdescription:"This is a puzzle with missing pieces. I might find those pieces in odd corners of scholarship. [Provide Fascination, which may breed; use a Library; or employ a Rarefied Mind skill.]",
+slots:[{id:"solvechallenge",label:"Solution", required:{fascination:1,library:1,skillreasond_illumination:1},greedy:true}],
+warmup:30,
+craftable:false,
+linked:[{id:"studyresearch.failed.challenge.illumination"},
+{id:"studyresearch.solved.challenge.illumination"}]
+}
+
+]
+}
